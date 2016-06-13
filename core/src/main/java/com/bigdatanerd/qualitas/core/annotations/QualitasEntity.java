@@ -1,8 +1,13 @@
 package com.bigdatanerd.qualitas.core.annotations;
 
-/**
- * Created by ananth.durai on 6/11/16.
- */
+
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+
+
+@Retention(RetentionPolicy.RUNTIME)
 public @interface QualitasEntity {
 
     // Name of the entity

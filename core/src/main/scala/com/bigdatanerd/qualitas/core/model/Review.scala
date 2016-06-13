@@ -5,7 +5,7 @@ import com.bigdatanerd.qualitas.core.annotations.{Qualitas, QualitasConstraints,
 
 
 @QualitasEntity(entity = "review")
-case class Review(@QualitasConstraints (qualitas = Array (new Qualitas(QualitasType.NONE), new Qualitas)) @QualitasProperty("review") reviewId : Long = 0,
+case class Review(@QualitasProperty(name = "review") @QualitasConstraints (qualitas = Array (new Qualitas(qualitasType = QualitasType.NONE), new Qualitas)) reviewId : Long = 0,
                   reviewTitle : String = "", reviewText : String = "", rating : Int = 0) {
 
 }
